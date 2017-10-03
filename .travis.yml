@@ -3,7 +3,7 @@ python:
  -"2.7"
 
 install:
- "pip install -r requerimientos.txt"
+ -"pip install -r requerimientos.txt"
 
 before_script:
  -autopep8 -ir *
