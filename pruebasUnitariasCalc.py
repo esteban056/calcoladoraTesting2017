@@ -1,4 +1,3 @@
-#Esteban Garcia de Santiago
 import unittest
 
 from calculadora import Calculadora
