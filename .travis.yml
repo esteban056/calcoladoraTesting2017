@@ -6,8 +6,13 @@ install:
  - "pip install -r requerimientos.txt"
 
 before_script:
+ - cd test/features 
  - autopep8 -ir *
- - flake8 --max-complexity=15 --exclude=*.txt,*.md,*.pyc *
+ - flake8 --max-complexity=8 --exclude=*.txt,*.md,*.pyc *
 
 script:
-  - python pruebasUnitariasCalc.py
+  - cd ..
+  - lettuce 
+  - python features/pruebasUnitariasCalc.py
+  - coverage run --branch features/pruebasUnitariasCalc.py
+  - coverage report -m

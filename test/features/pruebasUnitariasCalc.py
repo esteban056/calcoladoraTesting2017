@@ -57,7 +57,7 @@ class CalculadoraTest(unittest.TestCase):
         self.assertEquals(self.calc.obtener_resultado(), -10)
 
     def test_multiplicar_numero_mayor_a_10000(self):
-        self.calc.multiplicacion(2, 10000)
+        self.calc.multiplicacion(2000000, 10000)
         self.assertEquals(self.calc.obtener_resultado(),
                           'Numero muy grande no se puede computar')
 
@@ -99,7 +99,7 @@ class CalculadoraTest(unittest.TestCase):
         self.assertEquals(self.calc.obtener_resultado(), 'Datos incorrectos')
 
     def test_potencia_numero_grande(self):
-        self.calc.potencia(25, 10)
+        self.calc.potencia(250000000, 10)
         self.assertEquals(self.calc.obtener_resultado(),
                           'Numero muy grande no se puede computar')
 

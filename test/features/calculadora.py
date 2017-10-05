@@ -3,7 +3,7 @@ class Calculadora(object):
 
     def __init__(self):
         self.resultado = 0
-        self.maxNumero = 10000
+        self.maxNumero = 1000000
         self.msjErrorDatos = 'Datos incorrectos'
         self.msjErrorMaxNum = 'Numero muy grande no se puede computar'
         self.msjErrorDivCero = 'No se puede dividir entre cero'
