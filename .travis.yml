@@ -8,7 +8,7 @@ install:
 before_script:
  - cd test/features 
  - autopep8 -ir *
- - flake8 --max-complexity=8 --exclude=*.txt,*.md,*.pyc *
+ - flake8 --max-complexity=8 --exclude=*.txt,*.md,*.pyc,*.feature *
 
 script:
   - cd ..
